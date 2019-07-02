@@ -14,18 +14,16 @@ class App extends Component {
     this.handleScore = this.handleScore.bind(this)
   }
 
-  handleScore (isLoss) {
-    if (this.state.score === 12) {
-      this.setState({ maxScore: this.state.score, score: 0 })
-      return
-    }
-    if (!isLoss) {
-      this.setState({ score: this.state.score + 1 })
-    } else if (isLoss && this.state.maxScore < this.state.score) {
-      this.setState({ maxScore: this.state.score, score: 0 })
-    } else if (isLoss) {
-      this.setState({ score: 0 })
-    }
+  handleScore (scored) {
+    let maxScore = this.state.maxScore
+    let score = this.state.score
+
+    if (scored) score++
+    else score = 0
+
+    if (maxScore < score) maxScore = score
+
+    this.setState({ maxScore, score })
   }
 
   render () {

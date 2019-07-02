@@ -1,7 +1,7 @@
 {
   "name": "memory-game",
   "version": "0.1.0",
-  "homepage": "https://ethanbonsignori.github.io/Memory-Game",
+  "homepage": "https://ethanbonsignori.github.io/Memory-Game/",
   "private": true,
   "dependencies": {
     "gh-pages": "^2.0.1",

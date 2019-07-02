@@ -1,0 +1,14 @@
+[
+{ "id": 1, "name": "Aragorn" },
+{ "id": 2, "name": "Bilbo" },
+{ "id": 3, "name": "Bombur" },
+{ "id": 4, "name": "Boromir" },
+{ "id": 5, "name": "Frodo" },
+{ "id": 6, "name": "Gandalf" },
+{ "id": 7, "name": "Gimli" },
+{ "id": 8, "name": "Legolas" },
+{ "id": 9, "name": "Merry" },
+{ "id": 10, "name": "Pippin" },
+{ "id": 11, "name": "Samwise" },
+{ "id": 12, "name": "Thorin" }
+]

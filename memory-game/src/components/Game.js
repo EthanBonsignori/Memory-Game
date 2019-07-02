@@ -1,21 +1,11 @@
 import React from 'react'
 import { Row, Col } from 'react-bootstrap'
 import Portrait from '../components/Portrait'
+import { shuffle } from '../utils/utils'
+import portraitsJson from '../assets/data/portraits.json'
 
-const initialPortraits = [
-  { id: 1, isClicked: false, name: 'Aragorn' },
-  { id: 2, isClicked: false, name: 'Bilbo' },
-  { id: 3, isClicked: false, name: 'Bombur' },
-  { id: 4, isClicked: false, name: 'Boromir' },
-  { id: 5, isClicked: false, name: 'Frodo' },
-  { id: 6, isClicked: false, name: 'Gandalf' },
-  { id: 7, isClicked: false, name: 'Gimli' },
-  { id: 8, isClicked: false, name: 'Legolas' },
-  { id: 9, isClicked: false, name: 'Merry' },
-  { id: 10, isClicked: false, name: 'Pippin' },
-  { id: 11, isClicked: false, name: 'Samwise' },
-  { id: 12, isClicked: false, name: 'Thorin' }
-].sort(() => Math.random() - 0.5)
+const initialPortraits = shuffle(portraitsJson)
+let clicked = []
 
 class Game extends React.Component {
   constructor (props) {
@@ -30,26 +20,22 @@ class Game extends React.Component {
 
   handleClick (id) {
     const handleScore = this.props.handleScore
-    let newPortraits = [...this.state.portraits]
-    newPortraits.forEach(portrait => {
-      if (portrait.id === id) {
-        if (!portrait.isClicked) {
-          // Set portrait to clicked
-          portrait.isClicked = true
-          handleScore(false)
-        } else {
-          newPortraits.forEach(portrait => {
-            portrait.isClicked = false
-          })
-          // Handle loss
-          this.setState({ portraits: initialPortraits })
+    let portraits = this.state.portraits
+    for (let i = 0; i < portraits.length; i++) {
+      if (portraits[i].id === id) {
+        if (!clicked.includes(id)) {
+          clicked.push(id)
           handleScore(true)
+        } else {
+          // Handle loss
+          clicked = []
+          handleScore(false)
         }
       }
-    })
+    }
     // Randomize order of portraits
-    newPortraits = newPortraits.sort(() => Math.random() - 0.5)
-    this.setState({ portraits: newPortraits })
+    portraits = shuffle(portraits)
+    this.setState({ portraits: portraits })
   }
 
   render () {
