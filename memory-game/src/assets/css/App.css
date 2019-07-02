@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'ringbearermedium';
+  src: url('../fonts/ringm___-webfont.woff2') format('woff2'),
+       url('../fonts/ringm___-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'firstorder';
+  src: url('../fonts/FirstOrder.ttf');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+body {
+  font-family: 'ringbearermedium';
+  background-color: #7D4D5B
+}
+
+.portrait {
+  width: 200px;
+  height: 200px;
+  background-color: #F3E4DC;
+  border-radius: 5px;
+}
+
