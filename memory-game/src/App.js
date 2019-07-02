@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Container, Navbar } from 'react-bootstrap'
+import { Container, Navbar, Row, Col } from 'react-bootstrap'
 import { Parallax } from 'react-parallax'
 import Game from './components/Game'
 import './assets/css/App.css'
@@ -42,7 +42,17 @@ class App extends Component {
           bgImageAlt='Lord of the Rings Background'
           strength={400}
         >
-          <div style={{ height: '70vh' }} />
+          <Container>
+            <Row className='h-50'>
+              <Col className='h-100 d-table'>
+                <div className='d-table-cell align-middle text-center' style={{ height: '70vh' }} >
+                  <span className='fancy-text'>select each item only once</span>
+                  <br />
+                  <span className='fancy-subtext'>select each item only once</span>
+                </div>
+              </Col>
+            </Row>
+          </Container>
         </Parallax>
         <Container>
           <Game handleScore={this.handleScore} />

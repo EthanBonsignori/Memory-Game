@@ -11,7 +11,14 @@
   src: url('../fonts/FirstOrder.ttf');
   font-weight: normal;
   font-style: normal;
+}
 
+@font-face {
+  font-family: 'Tengwar Cursive';
+  src: url('../fonts/TengwarCursive.woff2') format('woff2'),
+       url('../fonts/TengwarCursive.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
@@ -20,8 +27,24 @@ body {
 }
 
 .score {
-  color: #fff;
   font-size: 3rem;
+  color: #fff;
+}
+
+.fancy-text {
+  position: relative;
+  display: inline;
+  font-family: 'Tengwar Cursive';
+  font-size: 9rem;
+  color: #fff;
+}
+
+.fancy-subtext {
+  position: relative;
+  display: inline;
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.5);
+  top: -50px;
 }
 
 .portrait-border {
