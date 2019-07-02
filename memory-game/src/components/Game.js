@@ -29,25 +29,26 @@ class Game extends React.Component {
   }
 
   handleClick (id) {
-    // let newPortraits = initialPortraits.map(portrait => {
-    let newPortraits = this.state.portraits
-    for (let i = 0; i < newPortraits.length; i++) {
-      if (newPortraits[i].id === id) {
-        // Set portrait to clicked
-        if (!newPortraits[i].isClicked) {
-          newPortraits[i].isClicked = true
-          // Handle loss
+    const handleScore = this.props.handleScore
+    let newPortraits = [...this.state.portraits]
+    newPortraits.forEach(portrait => {
+      if (portrait.id === id) {
+        if (!portrait.isClicked) {
+          // Set portrait to clicked
+          portrait.isClicked = true
+          handleScore(false)
         } else {
-          console.log('you lost')
+          newPortraits.forEach(portrait => {
+            portrait.isClicked = false
+          })
+          // Handle loss
+          this.setState({ portraits: initialPortraits })
+          handleScore(true)
         }
       }
-    }
-
-    // Randomize portraits
+    })
+    // Randomize order of portraits
     newPortraits = newPortraits.sort(() => Math.random() - 0.5)
-
-    console.log(newPortraits)
-
     this.setState({ portraits: newPortraits })
   }
 

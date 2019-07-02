@@ -19,6 +19,11 @@ body {
   background-color: #7D4D5B
 }
 
+.score {
+  color: #fff;
+  font-size: 3rem;
+}
+
 .portrait-border {
   width: 100px;
   background-color: #A87981;

@@ -6,7 +6,7 @@ class Portrait extends Component {
   }
 
   render () {
-    const { id, name } = this.props
+    const { name } = this.props
     return (
       <div 
         className='portrait' 

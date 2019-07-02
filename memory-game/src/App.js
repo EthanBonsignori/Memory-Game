@@ -11,19 +11,30 @@ class App extends Component {
       score: 0,
       maxScore: 0
     }
-    this.updateScore = this.updateScore.bind(this)
+    this.handleScore = this.handleScore.bind(this)
   }
 
-  // updateScore() {
-  //   this.setState({score: this.state.score += 1})
-  // }
+  handleScore (isLoss) {
+    if (this.state.score === 12) {
+      this.setState({ maxScore: this.state.score, score: 0 })
+      return
+    }
+    if (!isLoss) {
+      this.setState({ score: this.state.score + 1 })
+    } else if (isLoss && this.state.maxScore < this.state.score) {
+      this.setState({ maxScore: this.state.score, score: 0 })
+    } else if (isLoss) {
+      this.setState({ score: 0 })
+    }
+  }
 
   render () {
     return (
       <div>
-        <Navbar fixed='top' bg='none'>
+        <Navbar fixed='top' bg='none' className='justify-content-between'>
           <Container>
             <Navbar.Brand href='/' style={{ color: 'white', fontFamily: 'firstorder', fontSize: '4rem' }}>Memory Game</Navbar.Brand>
+            <span className='score'>score: {this.state.score} | max score: {this.state.maxScore}</span>
           </Container>
         </Navbar>
         <Parallax
@@ -34,7 +45,7 @@ class App extends Component {
           <div style={{ height: '70vh' }} />
         </Parallax>
         <Container>
-          <Game />
+          <Game handleScore={this.handleScore} />
         </Container>
       </div>
     )
