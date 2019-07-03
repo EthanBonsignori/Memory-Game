@@ -26,9 +26,10 @@ body {
   background-color: #7D4D5B
 }
 
-.score {
-  font-size: 3rem;
-  color: #fff;
+.nav-brand {
+  font-family: 'firstorder';
+  font-size: 4rem;
+  color: #fff !important;
 }
 
 .fancy-text {
@@ -72,4 +73,25 @@ body {
 .gameCol {
   padding: 0px;
   margin: 20px 30px;
+}
+
+.score {
+  font-size: 3rem;
+  color: white;
+}
+
+.correct-guess {
+  color: green;
+  animation: transitionToWhite 500ms;
+  animation-fill-mode: forwards;
+}
+
+.incorrect-guess {
+  color: red;
+  animation: transitionToWhite 500ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes transitionToWhite {
+  to { color: white }
 }

@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import { Container, Navbar, Row, Col } from 'react-bootstrap'
 import { Parallax } from 'react-parallax'
 import Game from './components/Game'
+import Score from './components/Score'
+import FancyText from './components/FancyText'
 import './assets/css/App.css'
 
 class App extends Component {
@@ -9,7 +11,9 @@ class App extends Component {
     super(props)
     this.state = {
       score: 0,
-      maxScore: 0
+      maxScore: 0,
+      scoreColor: 'white',
+      maxScoreColor: 'white'
     }
     this.handleScore = this.handleScore.bind(this)
   }
@@ -17,13 +21,27 @@ class App extends Component {
   handleScore (scored) {
     let maxScore = this.state.maxScore
     let score = this.state.score
+    let scoreClass = this.state.scoreColor
+    let maxScoreClass = this.state.maxScoreColor
 
-    if (scored) score++
-    else score = 0
+    if (scored) {
+      scoreClass = 'correct-guess'
+      score++
+    } else {
+      score = 0
+      scoreClass = 'incorrect-guess'
+    }
+    if (maxScore < score) {
+      maxScoreClass = 'correct-guess'
+      maxScore = score
+    }
+    this.setState({ maxScore, score, scoreClass, maxScoreClass })
 
-    if (maxScore < score) maxScore = score
-
-    this.setState({ maxScore, score })
+    setTimeout(() => {
+      scoreClass = ''
+      maxScoreClass = ''
+      this.setState({ scoreClass, maxScoreClass })
+    }, 450)
   }
 
   render () {
@@ -31,8 +49,13 @@ class App extends Component {
       <div>
         <Navbar fixed='top' bg='none' className='justify-content-between'>
           <Container>
-            <Navbar.Brand href='/' style={{ color: 'white', fontFamily: 'firstorder', fontSize: '4rem' }}>Memory Game</Navbar.Brand>
-            <span className='score'>score: {this.state.score} | max score: {this.state.maxScore}</span>
+            <Navbar.Brand href='/' className='nav-brand'>Memory Game</Navbar.Brand>
+            <Score
+              score={this.state.score}
+              maxScore={this.state.maxScore}
+              scoreClass={this.state.scoreClass}
+              maxScoreClass={this.state.maxScoreClass}
+            />
           </Container>
         </Navbar>
         <Parallax
@@ -43,11 +66,7 @@ class App extends Component {
           <Container>
             <Row className='h-50'>
               <Col className='h-100 d-table'>
-                <div className='d-table-cell align-middle text-center' style={{ height: '70vh' }} >
-                  <span className='fancy-text'>select each item only once</span>
-                  <br />
-                  <span className='fancy-subtext'>select each item only once</span>
-                </div>
+                <FancyText />
               </Col>
             </Row>
           </Container>
