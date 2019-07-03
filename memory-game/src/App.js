@@ -49,7 +49,7 @@ class App extends Component {
       <div>
         <Navbar fixed='top' bg='none' className='justify-content-between'>
           <Container>
-            <Navbar.Brand href='/' className='nav-brand'>Memory Game</Navbar.Brand>
+            <Navbar.Brand className='nav-brand'>Memory Game</Navbar.Brand>
             <Score
               score={this.state.score}
               maxScore={this.state.maxScore}

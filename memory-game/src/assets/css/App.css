@@ -95,3 +95,73 @@ body {
 @keyframes transitionToWhite {
   to { color: white }
 }
+
+@media only screen and (max-width: 991px) {
+  .score {
+    font-size: 2rem;
+  }
+  .nav-brand {
+    font-size: 3rem;
+  }
+  .fancy-text {
+    font-size: 7rem;
+  }
+  .fancy-subtext {
+    top: -40px;
+    font-size: 1.75rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .score {
+    font-size: 1.5rem;
+  }
+  .nav-brand {
+    font-size: 2rem;
+  }
+  .fancy-text {
+    top: -30px;
+    font-size: 5.5rem;
+  }
+  .fancy-subtext {
+    font-size: 1.25rem;
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  .score {
+    font-size: 1.25rem;
+  }
+  .nav-brand {
+    font-size: 1.75rem;
+  }
+  .fancy-text {
+    font-size: 4.75rem;
+  }
+  .fancy-subtext {
+    top: -20px;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 416px) {
+  .score {
+    font-size: 1.75rem;
+  }
+  .nav-brand {
+    display: none;
+  }
+  .fancy-text {
+    font-size: 3rem;
+  }
+  .fancy-subtext {
+    font-size: 1.25rem;
+    top: -10px;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .score {
+    font-size: 1.5rem;
+  }
+}
