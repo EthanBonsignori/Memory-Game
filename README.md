@@ -1,8 +1,33 @@
+
+![Ring](./readme/favicon.png "One Ring")
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+![Ring](./readme/favicon.png "to rule them all,")
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+![Ring](./readme/favicon.png "One Ring")
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+![Ring](./readme/favicon.png "to find them,")
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+![Ring](./readme/favicon.png "One Ring")
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+![Ring](./readme/favicon.png "to bring them all,")
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+![Ring](./readme/favicon.png "and in the darkness")
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+![Ring](./readme/favicon.png "bind them,")
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+![Ring](./readme/favicon.png "In the Land of Mordor,")
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+![Ring](./readme/favicon.png "where the Shadows lie.")
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+![Ring](./readme/favicon.png "MY PRECIOUSSSSS")
+
 [![Memory Game](./readme/logo.png "Visit Memory-Game on Github Pages")](https://ethanbonsignori.github.io/Memory-Game/)
 
 # Memory-Game
 
 > Test your skills in this quick Lord of the Rings themed memory game, built with React.
+
+
 
 **Instructions**
 1. Click on each portrait only once.
