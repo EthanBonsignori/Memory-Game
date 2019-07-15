@@ -20,26 +20,26 @@ I created this project as an exercise in learning to use React for a 6-month cod
 
 ------------
 
-![Ring](./readme/favicon.png "One Ring")
+![Ring](./readme/ring.png "One Ring")
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-![Ring](./readme/favicon.png "to rule them all,")
+![Ring](./readme/ring.png "to rule them all,")
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-![Ring](./readme/favicon.png "One Ring")
+![Ring](./readme/ring.png "One Ring")
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-![Ring](./readme/favicon.png "to find them,")
+![Ring](./readme/ring.png "to find them,")
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-![Ring](./readme/favicon.png "One Ring")
+![Ring](./readme/ring.png "One Ring")
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-![Ring](./readme/favicon.png "to bring them all,")
+![Ring](./readme/ring.png "to bring them all,")
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-![Ring](./readme/favicon.png "and in the darkness")
+![Ring](./readme/ring.png "and in the darkness")
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-![Ring](./readme/favicon.png "bind them,")
+![Ring](./readme/ring.png "bind them,")
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-![Ring](./readme/favicon.png "In the Land of Mordor,")
+![Ring](./readme/ring.png "In the Land of Mordor,")
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-![Ring](./readme/favicon.png "where the Shadows lie.")
+![Ring](./readme/ring.png "where the Shadows lie.")
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-![Ring](./readme/favicon.png "MY...")
+![Ring](./readme/ring.png "MY...")
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-![Ring](./readme/favicon.png "PRECIOUSSSSSSS")
+![Ring](./readme/ring.png "PRECIOUSSSSSSS")
