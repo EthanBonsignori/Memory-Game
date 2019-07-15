@@ -19,7 +19,7 @@
 I created this project as an exercise in learning to use React for a 6-month coding bootcamp through Georgia Tech and Trilogy.
 
 ------------
-
+&nbsp; &nbsp; &nbsp; &nbsp; 
 ![Ring](./readme/ring.png "One Ring")
 ![Ring](./readme/ring.png "to rule them all,")
 ![Ring](./readme/ring.png "One Ring")
